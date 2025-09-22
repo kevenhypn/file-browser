@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>File Browser</title>
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<main class="container">
+  <h1>File Browser</h1>
+
+  <table role="grid">
+    <thead>
+      <tr><th>File</th><th>Name</th><th>Type</th><th>Size</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><i class="fa-solid fa-file-image"></i></td>
+        <td><a href="files/hello.png">hello.png</a></td>
+        <td><code>image/png</code></td>
+        <td>~12 KB</td>
+      </tr>
+      <tr>
+        <td><i class="fa-solid fa-file-code"></i></td>
+        <td><a href="files/page.html">page.html</a></td>
+        <td><code>text/html</code></td>
+        <td>~1 KB</td>
+      </tr>
+      <tr>
+        <td><i class="fa-solid fa-file-code"></i></td>
+        <td><a href="files/data.json">data.json</a></td>
+        <td><code>application/json</code></td>
+        <td>~1 KB</td>
+      </tr>
+      <tr>
+        <td><i class="fa-solid fa-file-lines"></i></td>
+        <td><a href="files/note.txt">note.txt</a></td>
+        <td><code>text/plain</code></td>
+        <td>~1 KB</td>
+      </tr>
+      <tr>
+        <td><i class="fa-solid fa-file-pdf"></i></td>
+        <td><a href="files/sample.pdf">sample.pdf</a></td>
+        <td><code>application/pdf</code></td>
+        <td>~5 KB</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Observations</h2>
+  <ul>
+    <li>HTML opens in the tab with default styles.</li>
+    <li>PDF loads in the browser viewer, not as a download.</li>
+    <li>PNG shows as the image; JSON/TXT render as plain text.</li>
+  </ul>
+</main>
+</body>
+</html>
